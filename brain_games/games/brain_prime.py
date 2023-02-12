@@ -5,6 +5,8 @@ import math
 
 
 question = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
 def game_question():
     global num
     num = random.randint(2, 100)
@@ -24,10 +26,12 @@ def is_correct_answer():
         correct_answer = 'yes'
     return correct_answer
 
+
 def main():
     brain_games.scripts.engine.greet()
     brain_games.scripts.engine.ask_question(question)
     brain_games.scripts.engine.run_game(game_question, is_correct_answer)
+
 
 if __name__ == "__main__":
     main()

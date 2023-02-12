@@ -4,9 +4,11 @@ import random
 
 
 question = 'Answer "yes" if the number is even, otherwise answer "no"'
+
+
 def game_question():
     global num
-    num = random.randint(0, 100)
+    num = random.randint(1, 100)
     print(f'Question: {num}')
 
 
@@ -16,6 +18,7 @@ def is_correct_answer():
     else:
         correct_answer = 'no'
     return correct_answer
+
 
 def main():
     brain_games.scripts.engine.greet()
