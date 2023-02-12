@@ -3,7 +3,7 @@ import brain_games.scripts.engine
 import random
 
 
-question = 'Answer "yes" if the number is even, otherwise answer "no"'
+question = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def game_question():
