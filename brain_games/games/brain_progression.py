@@ -20,9 +20,13 @@ def game_question():
     rand_elem = random.choice(progression)
     global random_answer
     random_answer = rand_elem
-    progression = str(progression)
-    progression = progression.replace(str(rand_elem), '..')
-    print(f'Question: {progression}')
+    question = ''
+    question_counter = 0
+    while question_counter < progression_length:
+        question += str(progression[question_counter]) + ' '
+        question_counter += 1
+    question = question.replace(str(random_answer), "..").strip()
+    print(f'Question: {question}')
 
 
 def is_correct_answer():
