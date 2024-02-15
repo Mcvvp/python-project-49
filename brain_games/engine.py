@@ -15,6 +15,7 @@ def run_game(game):
     limit_of_rounds = 3
     while correct_answers_count < limit_of_rounds:
         question, correct_answer = game.game_core()
+        print(question)
         answer = prompt.string('Your answer: ')
         if answer == correct_answer:
             print('Correct!')
